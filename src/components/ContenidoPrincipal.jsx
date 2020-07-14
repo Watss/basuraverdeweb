@@ -30,7 +30,7 @@ function ContenidoPrincipal(){
   
     return (
       <LoadScript
-        googleMapsApiKey="AIzaSyBUJK6B9qfNDb-xcaZJSSXFt1Eg_BLo9Io"
+        googleMapsApiKey={process.env.API_KEY}
       >
         <GoogleMap
           mapContainerStyle={containerStyle}
