@@ -4,17 +4,22 @@ import React, {useEffect, useState, useCallback} from 'react';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 const containerStyle = {
-  width: '400px',
-  height: '400px'
+  position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
 };
 
 const center = {
-  lat: -3.745,
-  lng: -38.523
+  lat:  -36.6124541,
+  lng:  -72.1212213
 };
 
 
 function ContenidoPrincipal(){
+
+  
 
     const [map, setMap] = useState(null)
 
@@ -30,13 +35,13 @@ function ContenidoPrincipal(){
   
     return (
       <LoadScript
-        googleMapsApiKey="AIzaSyBUJK6B9qfNDb-xcaZJSSXFt1Eg_BLo9Io"
+        googleMapsApiKey="AIzaSyBKAoqWSiOWp8NWLTw1A5P0v2PlPwUJ9kU"
       >
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
-          zoom={10}
-          onLoad={onLoad}
+          zoom={12}
+         
           onUnmount={onUnmount}
         >
           { /* Child components, such as markers, info windows, etc. */ }

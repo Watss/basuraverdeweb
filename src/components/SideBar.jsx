@@ -12,18 +12,19 @@ const useStyles = makeStyles(theme => ({
 }) );
 
 export default function SideBar(props) {
-    const { openSidebar, onClose } = props;
+    const { openSidebar, onClose, variant } = props;
     const classes = useStyles();
 
     useEffect( () => {
         console.log(openSidebar);
+        
     });
 
     return (
         <div>
             <Drawer
               onClose={onClose}
-              variant="temporary"
+              variant={variant}
               anchor="left"
               classes={{ paper: classes.drawer }}
               open={openSidebar}
