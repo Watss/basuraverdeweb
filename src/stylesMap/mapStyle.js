@@ -1,4 +1,4 @@
-[
+export const mapStyles = [
     {
       "elementType": "geometry",
       "stylers": [
@@ -201,4 +201,4 @@
         }
       ]
     }
-  ]
+  ];

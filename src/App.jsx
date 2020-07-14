@@ -10,7 +10,7 @@ import Sidebar from './components/Sidebar/Sidebar.js';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#1b5e20',
+      main: '#009051',
       contrastText : '#fff'
     },
     secondary: {
